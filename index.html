@@ -11,6 +11,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -37,9 +38,31 @@
         </ul>
       </div>
     </nav>
-    <div class="main"></div>
-    <div class="prices"></div>
+    <div class="main">
+      <img src="./assets/mainGrapic.png" />
+      <div>
+        <h1>
+          Niech
+          <span class="yellow">druk</span>
+          będzie z Tobą!
+        </h1>
+        <h2>
+          Lorem ipsum dolor sit amet. Id laboriosam assumenda vel ipsa quibusdam
+        </h2>
+      </div>
+    </div>
+    <div class="prices">
+      <div>Cennik</div>
+      <div class="buttons">
+        <button id="btnMaloForm">wydruki małoformatowe</button>
+        <button id="btnWielkoForm">wydruki wielkoformatowe</button>
+        <button id="btnBind">bindowanie</button>
+        <button id="btnDypl">oprawa prac dyplomowych</button>
+      </div>
+      <div id="content"></div>
+    </div>
     <div class="contact"></div>
     <div class="footer"></div>
+    <script type="module" src="content.js"></script>
   </body>
 </html>
