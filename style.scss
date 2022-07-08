@@ -7,7 +7,7 @@ $dark: #444444;
 $sm: 0.8rem;
 $mdsm: 0.9rem;
 $md: 1rem;
-$lg: 2rem;
+$lg: 1.8rem;
 
 * {
   color: white;
@@ -30,6 +30,9 @@ body {
   margin: 0 5%;
   display: flex;
   justify-content: center;
+}
+.container {
+  max-width: 1500px;
 }
 
 .title {
@@ -140,12 +143,19 @@ body {
   margin: 20px 0;
   width: 100%;
 
-  border: 1px solid red; /* BORDER TEST*/
+  //border: 1px solid red; /* BORDER TEST*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  .main-text {
+    //border: 1px solid red; /* BORDER TEST*/
+    order: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   img {
     width: 100%;
   }
@@ -159,7 +169,30 @@ body {
   }
   @media (min-width: 650px) {
     img {
-      width: 50%;
+      width: 46%;
+      margin: 0 2%;
+      order: 2;
+    }
+    .main-text {
+      order: 1;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 46%;
+      margin: 0 2%;
+    }
+  }
+  @media (min-width: 1400px) {
+    img {
+      width: 46%;
+      margin: 0 2%;
+      order: 2;
+    }
+    .main-text {
+      order: 1;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 40%;
+      margin: 0 5%;
     }
   }
 }
@@ -219,7 +252,7 @@ body {
 .contact {
   margin-bottom: 20px;
   width: 100%;
-  border: 1px solid red; /* BORDER TEST*/
+  //border: 1px solid red; /* BORDER TEST*/
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -264,10 +297,10 @@ body {
       width: 50%;
       width: 40%;
       margin: 5%;
-      border: 1px solid blue; /* BORDER TEST*/
+      //border: 1px solid blue; /* BORDER TEST*/
     }
     .info {
-      margin: 10px 0;
+      margin: 15px 0;
 
       img {
         width: 40px;

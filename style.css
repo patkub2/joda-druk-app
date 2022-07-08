@@ -34,14 +34,18 @@ body {
           justify-content: center;
 }
 
+.container {
+  max-width: 1500px;
+}
+
 .title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 20px;
 }
 
 .yellow {
   color: #e3cd00;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .navbar {
@@ -164,8 +168,6 @@ body {
   margin-bottom: 20px;
   margin: 20px 0;
   width: 100%;
-  border: 1px solid red;
-  /* BORDER TEST*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +179,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+}
+
+.main .main-text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 .main img {
@@ -185,7 +201,7 @@ body {
 }
 
 .main h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 58px;
 }
 
@@ -196,7 +212,47 @@ body {
 
 @media (min-width: 650px) {
   .main img {
-    width: 50%;
+    width: 46%;
+    margin: 0 2%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main .main-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 46%;
+    margin: 0 2%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main img {
+    width: 46%;
+    margin: 0 2%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main .main-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 40%;
+    margin: 0 5%;
   }
 }
 
@@ -255,8 +311,6 @@ body {
 .contact {
   margin-bottom: 20px;
   width: 100%;
-  border: 1px solid red;
-  /* BORDER TEST*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,11 +370,9 @@ body {
     width: 50%;
     width: 40%;
     margin: 5%;
-    border: 1px solid blue;
-    /* BORDER TEST*/
   }
   .contact .info {
-    margin: 10px 0;
+    margin: 15px 0;
   }
   .contact .info img {
     width: 40px;
