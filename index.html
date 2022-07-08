@@ -21,48 +21,82 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <div class="container">
+      <nav class="navbar">
+        <img src="./assets/logo.png" />
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
 
-    <nav class="navbar">
-      <img src="./assets/logo.png" />
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-
-      <div class="navbar-links">
-        <ul>
-          <li><a href="#">Aktualności</a></li>
-          <li><a href="#">Cennik</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Aktualności</a></li>
+            <li><a href="#">Cennik</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main">
+        <img src="./assets/mainGrapic.png" />
+        <div>
+          <h1>
+            Niech
+            <span class="yellow">druk</span>
+            będzie z Tobą!
+          </h1>
+          <h2>
+            Lorem ipsum dolor sit amet. Id laboriosam assumenda vel ipsa
+            quibusdam
+          </h2>
+        </div>
       </div>
-    </nav>
-    <div class="main">
-      <img src="./assets/mainGrapic.png" />
-      <div>
-        <h1>
-          Niech
-          <span class="yellow">druk</span>
-          będzie z Tobą!
-        </h1>
-        <h2>
-          Lorem ipsum dolor sit amet. Id laboriosam assumenda vel ipsa quibusdam
-        </h2>
+      <div class="prices">
+        <h2 class="title">Cennik</h2>
+        <div class="buttons">
+          <button id="btnMaloForm">wydruki małoformatowe</button>
+          <button id="btnWielkoForm">wydruki wielkoformatowe</button>
+          <button id="btnBind">bindowanie</button>
+          <button id="btnDypl">oprawa prac dyplomowych</button>
+        </div>
+        <div id="content"></div>
       </div>
+      <div class="contact">
+        <h2 class="title">Kontakt</h2>
+        <img class="planets" src="./assets/planets.png" />
+        <div class="info-container">
+          <div class="info">
+            <img src="./assets/call.png" />
+            <h4>535 070 578</h4>
+          </div>
+          <div class="info">
+            <img src="./assets/message.png" />
+            <h4>kontakt@jodadruk.pl</h4>
+          </div>
+          <div class="info">
+            <img src="./assets/locationpin.png" />
+            <div>
+              <h4>Wydział Budownictwa Politechniki Śląskiej</h4>
+              <h5>ul. Akademicka 5 Gliwice</h5>
+            </div>
+          </div>
+          <div class="info">
+            <img src="./assets/directionboard.png" />
+            <h4>pok. 027 (piwnica, obok strefy studenta)</h4>
+          </div>
+          <div class="info">
+            <img src="./assets/facebook.png" />
+            <h4>facebook.com/jodadruk</h4>
+          </div>
+          <div class="info">
+            <img src="./assets/clock.png" />
+            <h4>Od ponniedziałku do piątku 8:00 do 15:00</h4>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
     </div>
-    <div class="prices">
-      <div>Cennik</div>
-      <div class="buttons">
-        <button id="btnMaloForm">wydruki małoformatowe</button>
-        <button id="btnWielkoForm">wydruki wielkoformatowe</button>
-        <button id="btnBind">bindowanie</button>
-        <button id="btnDypl">oprawa prac dyplomowych</button>
-      </div>
-      <div id="content"></div>
-    </div>
-    <div class="contact"></div>
-    <div class="footer"></div>
     <script type="module" src="content.js"></script>
   </body>
 </html>

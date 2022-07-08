@@ -4,6 +4,11 @@ $secondary: #ccc;
 $ternary: #272727;
 $dark: #444444;
 
+$sm: 0.8rem;
+$mdsm: 0.9rem;
+$md: 1rem;
+$lg: 2rem;
+
 * {
   color: white;
   background-color: #000227;
@@ -13,12 +18,27 @@ $dark: #444444;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 12px;
+  @media (min-width: 650px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 22px;
+  }
 }
 body {
   margin: 0 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: $lg;
+  padding: 20px;
 }
 .yellow {
   color: #e3cd00;
+  font-size: $lg;
 }
 ///////////////////////////////////
 .navbar {
@@ -116,6 +136,7 @@ body {
 
 ///////////////////////////////////
 .main {
+  margin-bottom: 20px;
   margin: 20px 0;
   width: 100%;
 
@@ -129,61 +150,149 @@ body {
     width: 100%;
   }
   h1 {
-    font-size: 24px;
+    font-size: $lg;
     line-height: 58px;
   }
   h2 {
-    font-size: 16px;
+    font-size: $md;
     line-height: 26px;
+  }
+  @media (min-width: 650px) {
+    img {
+      width: 50%;
+    }
   }
 }
 ///////////////////////////////////
 
-.buttons {
-  border: 1px solid #ffffff;
-  border-radius: 10px;
+.prices {
+  margin-bottom: 20px;
 
-  display: flex;
-  flex-wrap: wrap;
-  button {
-    font-size: 0.6rem;
-    border: 1px solid white;
-    width: 25%;
-    //min-width: 120px;
-    padding: 5px;
-    font-weight: 800;
+  .buttons {
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    button {
+      cursor: pointer;
+      font-size: $sm;
+      border: 1px solid white;
+      width: 25%;
+      //min-width: 120px;
+      padding: 15px 5px;
+      font-weight: 800;
+    }
+  }
+
+  .tg {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px 0;
+    td {
+      border-color: white;
+      border-style: solid;
+      border-width: 1px;
+
+      font-size: $sm;
+      overflow: hidden;
+      padding: 10px 5px;
+      word-break: normal;
+    }
+    th {
+      border-color: white;
+      border-style: solid;
+      border-width: 1px;
+      font-size: $sm;
+      font-weight: normal;
+      overflow: hidden;
+      padding: 10px 5px;
+      word-break: normal;
+    }
   }
 }
+///////////////////////////////////
 
-.tg {
+///////////////////////////////////
+
+.contact {
+  margin-bottom: 20px;
   width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin: 20px 0;
-  td {
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-
-    font-size: 14px;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
+  border: 1px solid red; /* BORDER TEST*/
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  h2 {
+    width: 100%;
   }
-  th {
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    font-size: 14px;
-    font-weight: normal;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
+  .info-container {
+    width: 100%;
+    //border: 1px solid blue; /* BORDER TEST*/
+  }
+  .info {
+    margin: 10px 0;
+    width: 100%;
+    height: 14%;
+    //border: 1px solid red; /* BORDER TEST*/
+    display: flex;
+    align-items: center;
+    img {
+      width: 30px;
+      margin-right: 10px;
+    }
+    h4 {
+      font-size: $md;
+    }
+    h5 {
+      font-size: $md;
+    }
+  }
+  .planets {
+    display: none;
+  }
+  @media (min-width: 650px) {
+    .planets {
+      display: block;
+      width: 40%;
+      height: 40%;
+      margin: 5%;
+      max-width: 600px;
+      //border: 1px solid blue; /* BORDER TEST*/
+    }
+    .info-container {
+      width: 50%;
+      width: 40%;
+      margin: 5%;
+      border: 1px solid blue; /* BORDER TEST*/
+    }
+    .info {
+      margin: 10px 0;
+
+      img {
+        width: 40px;
+        margin-right: 10px;
+      }
+      h4 {
+        font-size: $md;
+      }
+      h5 {
+        font-size: $mdsm;
+      }
+    }
+  }
+  @media (min-width: 1400px) {
+    .info {
+      margin: 30px 0;
+      img {
+        width: 50px;
+        margin-right: 10px;
+      }
+    }
   }
 }
-
 ///////////////////////////////////
 .footer {
   display: flex;
-  height: 200vh;
+  //height: 200vh;
 }
