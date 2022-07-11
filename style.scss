@@ -18,7 +18,7 @@ $lg: 1.8rem;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   @media (min-width: 650px) {
     font-size: 16px;
   }
@@ -32,7 +32,7 @@ body {
   justify-content: center;
 }
 .container {
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 .title {
@@ -139,8 +139,7 @@ body {
 
 ///////////////////////////////////
 .main {
-  margin-bottom: 20px;
-  margin: 20px 0;
+  margin: 50px 0;
   width: 100%;
 
   //border: 1px solid red; /* BORDER TEST*/
@@ -155,13 +154,14 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    align-items: center;
   }
   img {
     width: 100%;
   }
   h1 {
     font-size: $lg;
-    line-height: 58px;
+    margin: 10px 0;
   }
   h2 {
     font-size: $md;
@@ -327,5 +327,11 @@ body {
 ///////////////////////////////////
 .footer {
   display: flex;
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
   //height: 200vh;
+  margin: 5px;
+  color: rgb(109, 109, 109);
 }

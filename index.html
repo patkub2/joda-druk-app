@@ -8,7 +8,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>JODA DRUK</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Drukarnia cyfrowa w gliwicach, wydruki wielkoformatowe
+    oraz oprawa dokumentacji."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -44,13 +48,13 @@
 
         <div class="navbar-links">
           <ul>
-            <li><a href="#">Aktualności</a></li>
-            <li><a href="#">Cennik</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#main">Aktualności</a></li>
+            <li><a href="#cennik">Cennik</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
       </nav>
-      <div class="main">
+      <div class="main" id="main">
         <img src="./assets/mainGrapic.png" />
         <div class="main-text">
           <h1>
@@ -59,22 +63,22 @@
             będzie z Tobą!
           </h1>
           <h2>
-            Lorem ipsum dolor sit amet. Id laboriosam assumenda vel ipsa
-            quibusdam
+            Drukarnia cyfrowa w gliwicach, wydruki wielkoformatowe oraz oprawa
+            dokumentacji.
           </h2>
         </div>
       </div>
-      <div class="prices">
+      <div class="prices" id="cennik">
         <h2 class="title">Cennik</h2>
         <div class="buttons">
           <button id="btnMaloForm">wydruki małoformatowe</button>
           <button id="btnWielkoForm">wydruki wielkoformatowe</button>
           <button id="btnBind">bindowanie</button>
-          <button id="btnDypl">oprawa prac dyplomowych</button>
+          <button id="btnDypl">inne</button>
         </div>
         <div id="content"></div>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact">
         <h2 class="title">Kontakt</h2>
         <img class="planets" src="./assets/planets.png" />
         <div class="info-container">
@@ -107,7 +111,7 @@
           </div>
         </div>
       </div>
-      <div class="footer"></div>
+      <div class="footer">© 2022 Joda druk. All rights reserved.</div>
     </div>
     <script type="module" src="content.js"></script>
   </body>

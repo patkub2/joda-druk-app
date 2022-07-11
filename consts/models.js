@@ -12,11 +12,13 @@ import {
   BindowaniePlastikowe,
   BindowanieTermobindowe,
   Oprawa,
+  Laminowanie,
+  Dodatkowo,
 } from "./data.js";
 
 export const MaloForm =
   `
-<h2>wydruk czarno-biały</h2>
+<h2>Wydruk czarno-biały</h2>
 <table class="tg">
 <thead>
   <tr>
@@ -72,7 +74,7 @@ export const MaloForm =
   </tr>
 </tbody>
 </table>
-<h2>wydruk kolorowy</h2>
+<h2>Wydruk kolorowy</h2>
 <table class="tg">
 <thead>
   <tr>
@@ -87,10 +89,10 @@ export const MaloForm =
   Object.keys(A4Kolor)[0] +
   `</td>
     <td class="tg-0pky">` +
-  A4Kolor["1-50 szt."] +
+  A4Kolor["1-30 szt."] +
   ` zł</td>
     <td class="tg-0lax">` +
-  A3Kolor["1-50 szt."] +
+  A3Kolor["1-30 szt."] +
   ` zł</td>
   </tr>
   <tr>
@@ -98,10 +100,10 @@ export const MaloForm =
   Object.keys(A4Kolor)[1] +
   `</td>
     <td class="tg-0pky">` +
-  A4Kolor["51-100 szt."] +
+  A4Kolor["31-100 szt."] +
   ` zł</td></td>
     <td class="tg-0lax">` +
-  A3Kolor["51-100 szt."] +
+  A3Kolor["31-100 szt."] +
   ` zł</td></td>
   </tr>
   <tr>
@@ -109,10 +111,10 @@ export const MaloForm =
   Object.keys(A4Kolor)[2] +
   `</td>
     <td class="tg-0lax">` +
-  A4Kolor["101-300 szt."] +
+  A4Kolor["101-200 szt."] +
   ` zł</td></td>
     <td class="tg-0lax">` +
-  A3Kolor["101-300 szt."] +
+  A3Kolor["101-200 szt."] +
   ` zł</td></td>
   </tr>
   <tr>
@@ -120,10 +122,10 @@ export const MaloForm =
   Object.keys(A4Kolor)[3] +
   `</td>
     <td class="tg-0lax">` +
-  A4Kolor[">300 szt."] +
+  A4Kolor[">200 szt."] +
   ` zł</td></td>
     <td class="tg-0lax">` +
-  A3Kolor[">300 szt."] +
+  A3Kolor[">200 szt."] +
   ` zł</td></td>
   </tr>
 </tbody>
@@ -230,7 +232,7 @@ export const WielkoForm =
 </table>`;
 
 export const Bind =
-  `<h2>bindowanie plastikowe<h2>
+  `<h2>Bindowanie plastikowe<h2>
 <table class="tg">
 <tr>
   <td class="tg-0pky">` +
@@ -275,14 +277,14 @@ export const Bind =
 </tr>
 
 </table>
-<h2>bindowanie drutowe<h2>
+<h2>Bindowanie drutowe<h2>
 <table class="tg">
 <tr>
   <td class="tg-0pky">` +
   Object.keys(BindowanieDrutowe)[0] +
   `</th>
   <td class="tg-0pky">` +
-  BindowanieDrutowe["1-50 szt"] +
+  BindowanieDrutowe["1-40 szt"] +
   ` zł</th>
 </tr>
 
@@ -291,7 +293,7 @@ export const Bind =
   Object.keys(BindowanieDrutowe)[1] +
   `</td>
   <td class="tg-0pky">` +
-  BindowanieDrutowe["51-100 szt."] +
+  BindowanieDrutowe["41-80 szt."] +
   ` zł</td>
 </tr>
 <tr>
@@ -299,20 +301,13 @@ export const Bind =
   Object.keys(BindowanieDrutowe)[2] +
   `</td>
   <td class="tg-0pky">` +
-  BindowanieDrutowe["151-250 szt."] +
+  BindowanieDrutowe["81-120 szt."] +
   ` zł</td>
 </tr>
+
 <tr>
   <td class="tg-0pky">` +
   Object.keys(BindowanieDrutowe)[3] +
-  `</td>
-  <td class="tg-0pky">` +
-  BindowanieDrutowe[">250 szt"] +
-  ` zł</td>
-</tr>
-<tr>
-  <td class="tg-0pky">` +
-  Object.keys(BindowanieDrutowe)[4] +
   `</td>
   <td class="tg-0pky">` +
   BindowanieDrutowe["ponowna oprawa"] +
@@ -321,57 +316,35 @@ export const Bind =
 
 </table>
 
-<h2>termobindowanie<h2>
+<h2>Termobindowanie<h2>
 <table class="tg">
+
 <tr>
   <td class="tg-0pky">` +
   Object.keys(BindowanieTermobindowe)[0] +
-  `</th>
+  `</td>
   <td class="tg-0pky">` +
-  BindowanieTermobindowe["1-50 szt"] +
-  ` zł</th>
+  BindowanieTermobindowe["1-150 szt."] +
+  ` zł</td>
 </tr>
-
 <tr>
   <td class="tg-0pky">` +
   Object.keys(BindowanieTermobindowe)[1] +
   `</td>
   <td class="tg-0pky">` +
-  BindowanieTermobindowe["51-100 szt."] +
+  BindowanieTermobindowe["151-300 szt."] +
   ` zł</td>
 </tr>
-<tr>
-  <td class="tg-0pky">` +
-  Object.keys(BindowanieTermobindowe)[2] +
-  `</td>
-  <td class="tg-0pky">` +
-  BindowanieTermobindowe["151-250 szt."] +
-  ` zł</td>
-</tr>
-<tr>
-  <td class="tg-0pky">` +
-  Object.keys(BindowanieTermobindowe)[3] +
-  `</td>
-  <td class="tg-0pky">` +
-  BindowanieTermobindowe[">250 szt"] +
-  ` zł</td>
-</tr>
-<tr>
-  <td class="tg-0pky">` +
-  Object.keys(BindowanieTermobindowe)[4] +
-  `</td>
-  <td class="tg-0pky">` +
-  BindowanieTermobindowe["ponowna oprawa"] +
-  ` zł</td>
-</tr>
+
 
 </table>`;
 export const Dypl =
   `<table class="tg">
-  
+  <h2>Oprawa prac
+  dyplomowych </h2>
 <tr>
   <td class="tg-0pky">` +
-  Object.keys(BindowanieTermobindowe)[0] +
+  Object.keys(Oprawa)[0] +
   `</th>
   <td class="tg-0pky">` +
   Oprawa["oprawa twarda"] +
@@ -380,7 +353,7 @@ export const Dypl =
 
 <tr>
   <td class="tg-0pky">` +
-  Object.keys(BindowanieTermobindowe)[1] +
+  Object.keys(Oprawa)[1] +
   `</td>
   <td class="tg-0pky">` +
   Oprawa["oprawa miękka"] +
@@ -388,11 +361,66 @@ export const Dypl =
 </tr>
 <tr>
   <td class="tg-0pky">` +
-  Object.keys(BindowanieTermobindowe)[2] +
+  Object.keys(Oprawa)[2] +
   `</td>
   <td class="tg-0pky">` +
   Oprawa["ponowna oprawa"] +
   ` zł</td>
 </tr>
+
+</table>
+
+<table class="tg">
+  <h2>Laminowanie</h2>
+<tr>
+  <td class="tg-0pky">` +
+  Object.keys(Laminowanie)[0] +
+  `</th>
+  <td class="tg-0pky">` +
+  Laminowanie.A4 +
+  ` zł</th>
+</tr>
+
+<tr>
+  <td class="tg-0pky">` +
+  Object.keys(Laminowanie)[1] +
+  `</td>
+  <td class="tg-0pky">` +
+  Laminowanie.A3 +
+  ` zł</td>
+</tr>
+
+
+</table>
+
+<table class="tg">
+  <h2>Dodatkowo</h2>
+<tr>
+  <td class="tg-0pky">` +
+  Object.keys(Dodatkowo)[0] +
+  `</th>
+  <td class="tg-0pky">` +
+  Dodatkowo["Zapis z CAD"] +
+  ` zł</th>
+</tr>
+
+<tr>
+  <td class="tg-0pky">` +
+  Object.keys(Dodatkowo)[1] +
+  `</td>
+  <td class="tg-0pky">` +
+  Dodatkowo["Edycja tekst/rysunek"] +
+  ` zł</td>
+</tr>
+
+<tr>
+  <td class="tg-0pky">` +
+  Object.keys(Dodatkowo)[1] +
+  `</td>
+  <td class="tg-0pky">` +
+  Dodatkowo["Nagranie CD"] +
+  ` zł</td>
+</tr>
+
 
 </table>`;
