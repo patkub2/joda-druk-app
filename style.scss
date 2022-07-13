@@ -9,6 +9,9 @@ $mdsm: 0.9rem;
 $md: 1rem;
 $lg: 1.8rem;
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   color: white;
   background-color: #000227;
@@ -74,6 +77,13 @@ body {
     text-decoration: none;
     color: white;
     padding: 1rem;
+    border: 1px solid transparent;
+    border-bottom: 1px solid transparent; /* BORDER TEST*/
+    transition: border-color 0.3s ease-in-out;
+  }
+  a:hover {
+    border-bottom: 1px solid white; /* BORDER TEST*/
+    box-sizing: border-box;
   }
 
   li:hover {
@@ -334,4 +344,8 @@ body {
   //height: 200vh;
   margin: 5px;
   color: rgb(109, 109, 109);
+  #facebook {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
