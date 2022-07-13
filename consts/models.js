@@ -24,7 +24,7 @@ export const MaloForm =
   <tr>
     <th class="tg-0pky"></th>
     <th class="tg-0pky">A4</th>
-    <th class="tg-0lax">A3</th>
+    <th class="tg-0pky">A3</th>
   </tr>
 </thead>
 <tbody>
@@ -33,10 +33,10 @@ export const MaloForm =
   Object.keys(A4Mono)[0] +
   `</td>
     <td class="tg-0pky">` +
-  A4Mono["1-50 szt."] +
+  A4Mono["1-50 szt"] +
   ` zł</td>
-    <td class="tg-0lax">` +
-  A3Mono["1-50 szt."] +
+    <td class="tg-0pky">` +
+  A3Mono["1-50 szt"] +
   ` zł</td>
   </tr>
   <tr>
@@ -44,32 +44,32 @@ export const MaloForm =
   Object.keys(A4Mono)[1] +
   `</td>
     <td class="tg-0pky">` +
-  A4Mono["51-100 szt."] +
+  A4Mono["51-100 szt"] +
   ` zł</td></td>
-    <td class="tg-0lax">` +
-  A3Mono["51-100 szt."] +
+    <td class="tg-0pky">` +
+  A3Mono["51-100 szt"] +
   ` zł</td></td>
   </tr>
   <tr>
-    <td class="tg-0lax">` +
+    <td class="tg-0pky">` +
   Object.keys(A4Mono)[2] +
   `</td>
-    <td class="tg-0lax">` +
-  A4Mono["101-300 szt."] +
+    <td class="tg-0pky">` +
+  A4Mono["101-300 szt"] +
   ` zł</td></td>
-    <td class="tg-0lax">` +
-  A3Mono["101-300 szt."] +
+    <td class="tg-0pky">` +
+  A3Mono["101-300 szt"] +
   ` zł</td></td>
   </tr>
   <tr>
-    <td class="tg-0lax">` +
+    <td class="tg-0pky">` +
   Object.keys(A4Mono)[3] +
   `</td>
-    <td class="tg-0lax">` +
-  A4Mono[">300 szt."] +
+    <td class="tg-0pky">` +
+  A4Mono[">300 szt"] +
   ` zł</td></td>
-    <td class="tg-0lax">` +
-  A3Mono[">300 szt."] +
+    <td class="tg-0pky">` +
+  A3Mono[">300 szt"] +
   ` zł</td></td>
   </tr>
 </tbody>
@@ -80,7 +80,7 @@ export const MaloForm =
   <tr>
     <th class="tg-0pky"></th>
     <th class="tg-0pky">A4</th>
-    <th class="tg-0lax">A3</th>
+    <th class="tg-0pky">A3</th>
   </tr>
 </thead>
 <tbody>
@@ -89,10 +89,10 @@ export const MaloForm =
   Object.keys(A4Kolor)[0] +
   `</td>
     <td class="tg-0pky">` +
-  A4Kolor["1-30 szt."] +
+  A4Kolor["1-30 szt"] +
   ` zł</td>
-    <td class="tg-0lax">` +
-  A3Kolor["1-30 szt."] +
+    <td class="tg-0pky">` +
+  A3Kolor["1-30 szt"] +
   ` zł</td>
   </tr>
   <tr>
@@ -100,32 +100,32 @@ export const MaloForm =
   Object.keys(A4Kolor)[1] +
   `</td>
     <td class="tg-0pky">` +
-  A4Kolor["31-100 szt."] +
+  A4Kolor["31-100 szt"] +
   ` zł</td></td>
-    <td class="tg-0lax">` +
-  A3Kolor["31-100 szt."] +
+    <td class="tg-0pky">` +
+  A3Kolor["31-100 szt"] +
   ` zł</td></td>
   </tr>
   <tr>
-    <td class="tg-0lax">` +
+    <td class="tg-0pky">` +
   Object.keys(A4Kolor)[2] +
   `</td>
-    <td class="tg-0lax">` +
-  A4Kolor["101-200 szt."] +
+    <td class="tg-0pky">` +
+  A4Kolor["101-200 szt"] +
   ` zł</td></td>
-    <td class="tg-0lax">` +
-  A3Kolor["101-200 szt."] +
+    <td class="tg-0pky">` +
+  A3Kolor["101-200 szt"] +
   ` zł</td></td>
   </tr>
   <tr>
-    <td class="tg-0lax">` +
+    <td class="tg-0pky">` +
   Object.keys(A4Kolor)[3] +
   `</td>
-    <td class="tg-0lax">` +
-  A4Kolor[">200 szt."] +
+    <td class="tg-0pky">` +
+  A4Kolor[">200 szt"] +
   ` zł</td></td>
-    <td class="tg-0lax">` +
-  A3Kolor[">200 szt."] +
+    <td class="tg-0pky">` +
+  A3Kolor[">200 szt"] +
   ` zł</td></td>
   </tr>
 </tbody>
@@ -235,43 +235,43 @@ export const Bind =
   `<h2>Bindowanie plastikowe<h2>
 <table class="tg">
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowaniePlastikowe)[0] +
   `</th>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   BindowaniePlastikowe["1-50 szt"] +
   ` zł</th>
 </tr>
 
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowaniePlastikowe)[1] +
   `</td>
-  <td class="tg-0pky">` +
-  BindowaniePlastikowe["51-100 szt."] +
+  <td class="double">` +
+  BindowaniePlastikowe["51-100 szt"] +
   ` zł</td>
 </tr>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowaniePlastikowe)[2] +
   `</td>
-  <td class="tg-0pky">` +
-  BindowaniePlastikowe["151-250 szt."] +
+  <td class="double">` +
+  BindowaniePlastikowe["151-250 szt"] +
   ` zł</td>
 </tr>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowaniePlastikowe)[3] +
   `</td>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   BindowaniePlastikowe[">250 szt"] +
   ` zł</td>
 </tr>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowaniePlastikowe)[4] +
   `</td>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   BindowaniePlastikowe["ponowna oprawa"] +
   ` zł</td>
 </tr>
@@ -280,36 +280,36 @@ export const Bind =
 <h2>Bindowanie drutowe<h2>
 <table class="tg">
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowanieDrutowe)[0] +
   `</th>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   BindowanieDrutowe["1-40 szt"] +
   ` zł</th>
 </tr>
 
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowanieDrutowe)[1] +
   `</td>
-  <td class="tg-0pky">` +
-  BindowanieDrutowe["41-80 szt."] +
+  <td class="double">` +
+  BindowanieDrutowe["41-80 szt"] +
   ` zł</td>
 </tr>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowanieDrutowe)[2] +
   `</td>
-  <td class="tg-0pky">` +
-  BindowanieDrutowe["81-120 szt."] +
+  <td class="double">` +
+  BindowanieDrutowe["81-120 szt"] +
   ` zł</td>
 </tr>
 
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowanieDrutowe)[3] +
   `</td>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   BindowanieDrutowe["ponowna oprawa"] +
   ` zł</td>
 </tr>
@@ -320,19 +320,19 @@ export const Bind =
 <table class="tg">
 
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowanieTermobindowe)[0] +
   `</td>
-  <td class="tg-0pky">` +
-  BindowanieTermobindowe["1-150 szt."] +
+  <td class="double">` +
+  BindowanieTermobindowe["1-150 szt"] +
   ` zł</td>
 </tr>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(BindowanieTermobindowe)[1] +
   `</td>
-  <td class="tg-0pky">` +
-  BindowanieTermobindowe["151-300 szt."] +
+  <td class="double">` +
+  BindowanieTermobindowe["151-300 szt"] +
   ` zł</td>
 </tr>
 
@@ -343,27 +343,27 @@ export const Dypl =
   <h2>Oprawa prac
   dyplomowych </h2>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(Oprawa)[0] +
   `</th>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Oprawa["oprawa twarda"] +
   ` zł</th>
 </tr>
 
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(Oprawa)[1] +
   `</td>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Oprawa["oprawa miękka"] +
   ` zł</td>
 </tr>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(Oprawa)[2] +
   `</td>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Oprawa["ponowna oprawa"] +
   ` zł</td>
 </tr>
@@ -373,19 +373,19 @@ export const Dypl =
 <table class="tg">
   <h2>Laminowanie</h2>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(Laminowanie)[0] +
   `</th>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Laminowanie.A4 +
   ` zł</th>
 </tr>
 
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(Laminowanie)[1] +
   `</td>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Laminowanie.A3 +
   ` zł</td>
 </tr>
@@ -396,28 +396,28 @@ export const Dypl =
 <table class="tg">
   <h2>Dodatkowo</h2>
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(Dodatkowo)[0] +
   `</th>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Dodatkowo["Zapis z CAD"] +
   ` zł</th>
 </tr>
 
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(Dodatkowo)[1] +
   `</td>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Dodatkowo["Edycja tekst/rysunek"] +
   ` zł</td>
 </tr>
 
 <tr>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Object.keys(Dodatkowo)[1] +
   `</td>
-  <td class="tg-0pky">` +
+  <td class="double">` +
   Dodatkowo["Nagranie CD"] +
   ` zł</td>
 </tr>

@@ -12,7 +12,12 @@ html {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
+}
+@media (min-width: 450px) {
+  * {
+    font-size: 14px;
+  }
 }
 @media (min-width: 650px) {
   * {
@@ -198,14 +203,14 @@ body {
   border-radius: 0px;
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 .prices .buttons button {
   cursor: pointer;
   font-size: 0.8rem;
   border: 1px solid white;
   width: 25%;
-  padding: 15px 5px;
+  padding: 15px 0px;
   font-weight: 800;
 }
 .prices .tg {
@@ -221,7 +226,16 @@ body {
   font-size: 0.8rem;
   overflow: hidden;
   padding: 10px 5px;
-  word-break: normal;
+  text-align: center;
+}
+.prices .tg .double {
+  width: 70%;
+}
+.prices .tg td:nth-child(2) {
+  text-align: center;
+}
+.prices .tg .tg-0pky {
+  text-align: center;
 }
 .prices .tg th {
   border-color: white;

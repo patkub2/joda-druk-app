@@ -4,6 +4,7 @@ $secondary: #ccc;
 $ternary: #272727;
 $dark: #444444;
 
+$sm: 0.6rem;
 $sm: 0.8rem;
 $mdsm: 0.9rem;
 $md: 1rem;
@@ -21,7 +22,10 @@ html {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
+  @media (min-width: 450px) {
+    font-size: 14px;
+  }
   @media (min-width: 650px) {
     font-size: 16px;
   }
@@ -216,14 +220,14 @@ body {
     border-radius: 0px;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 40px 0;
     button {
       cursor: pointer;
       font-size: $sm;
       border: 1px solid white;
       width: 25%;
       //min-width: 120px;
-      padding: 15px 5px;
+      padding: 15px 0px;
       font-weight: 800;
     }
   }
@@ -241,7 +245,16 @@ body {
       font-size: $sm;
       overflow: hidden;
       padding: 10px 5px;
-      word-break: normal;
+      text-align: center;
+    }
+    .double {
+      width: 70%;
+    }
+    td:nth-child(2) {
+      text-align: center;
+    }
+    .tg-0pky {
+      text-align: center;
     }
     th {
       border-color: white;
