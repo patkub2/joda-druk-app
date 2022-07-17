@@ -415,7 +415,7 @@ export const Dypl =
 
 <tr>
   <td class="double">` +
-  Object.keys(Dodatkowo)[1] +
+  Object.keys(Dodatkowo)[2] +
   `</td>
   <td class="double">` +
   Dodatkowo["Nagranie CD"] +
