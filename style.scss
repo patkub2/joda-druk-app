@@ -7,14 +7,12 @@ $dark: #444444;
 $sm: 0.8rem;
 $mdsm: 0.9rem;
 $md: 1rem;
-$lg: 1.8rem;
+$lg: 2rem;
 
 html {
   scroll-behavior: smooth;
 }
 * {
-  color: white;
-  background-color: #000227;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,7 +28,13 @@ html {
     font-size: 22px;
   }
 }
+a {
+  color: white;
+}
 body {
+  color: white;
+  background-color: #000227;
+
   margin: 0 5%;
   display: flex;
   justify-content: center;
@@ -85,6 +89,7 @@ body {
   a:hover {
     border-bottom: 1px solid white; /* BORDER TEST*/
     box-sizing: border-box;
+    background-color: #000227;
   }
 
   li:hover {
@@ -215,7 +220,6 @@ body {
   margin-bottom: 20px;
 
   .buttons {
-    border: 1px solid #ffffff;
     border-radius: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -232,8 +236,14 @@ body {
         width: 25%;
       }
     }
+    button:hover {
+      box-shadow: inset 0px 0px 0px 2px rgb(255, 255, 255);
+    }
   }
-
+  tr:nth-child(even),
+  th {
+    background-color: #000236;
+  }
   .tg {
     width: 100%;
     border-collapse: collapse;
@@ -252,8 +262,8 @@ body {
     .double {
       width: 70%;
     }
-    td:nth-child(2) {
-      text-align: center;
+    td :nth-child(2) {
+      text-align: right;
     }
     .tg-0pky {
       text-align: center;
@@ -267,6 +277,9 @@ body {
       overflow: hidden;
       padding: 10px 5px;
       word-break: normal;
+    }
+    tr:hover {
+      box-shadow: inset 0px 0px 0px 2px rgb(255, 255, 255);
     }
   }
 }
@@ -299,12 +312,16 @@ body {
       width: 30px;
       margin-right: 10px;
     }
+
     h4 {
       font-size: $md;
     }
     h5 {
       font-size: $md;
     }
+  }
+  .info:hover {
+    padding: 0px 0px 0px 5px;
   }
   .planets {
     display: none;
@@ -318,6 +335,7 @@ body {
       max-width: 600px;
       //border: 1px solid blue; /* BORDER TEST*/
     }
+
     .info-container {
       width: 50%;
       width: 40%;

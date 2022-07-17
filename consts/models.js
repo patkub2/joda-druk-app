@@ -337,10 +337,10 @@ export const Bind =
 </tr>
 
 
-</table>`;
-export const Dypl =
-  `<table class="tg">
-  <h2>Oprawa prac
+</table>
+
+<table class="tg">
+  <h2>Oprawy prac
   dyplomowych </h2>
 <tr>
   <td class="double">` +
@@ -368,7 +368,9 @@ export const Dypl =
   ` zł</td>
 </tr>
 
-</table>
+</table>`;
+export const Dypl =
+  `
 
 <table class="tg">
   <h2>Laminowanie</h2>

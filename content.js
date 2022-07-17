@@ -8,15 +8,15 @@ let btnDypl = document.querySelector("#btnDypl");
 let content = document.querySelector("#content");
 
 function Selected(props) {
-  document.getElementById("btnMaloForm").style.backgroundColor = "";
-  document.getElementById("btnWielkoForm").style.backgroundColor = "";
-  document.getElementById("btnBind").style.backgroundColor = "";
-  document.getElementById("btnDypl").style.backgroundColor = "";
+  document.getElementById("btnMaloForm").style.backgroundColor = "#000227";
+  document.getElementById("btnWielkoForm").style.backgroundColor = "#000227";
+  document.getElementById("btnBind").style.backgroundColor = "#000227";
+  document.getElementById("btnDypl").style.backgroundColor = "#000227";
 
-  document.getElementById("btnMaloForm").style.color = "";
-  document.getElementById("btnWielkoForm").style.color = "";
-  document.getElementById("btnBind").style.color = "";
-  document.getElementById("btnDypl").style.color = "";
+  document.getElementById("btnMaloForm").style.color = "white";
+  document.getElementById("btnWielkoForm").style.color = "white";
+  document.getElementById("btnBind").style.color = "white";
+  document.getElementById("btnDypl").style.color = "white";
   document.getElementById(props).style.backgroundColor = "white";
   document.getElementById(props).style.color = "#000227";
 }
