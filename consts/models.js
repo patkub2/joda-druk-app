@@ -14,6 +14,7 @@ import {
   Oprawa,
   Laminowanie,
   Dodatkowo,
+  Skanowanie,
 } from "./data.js";
 
 export const MaloForm =
@@ -425,4 +426,28 @@ export const Dypl =
 </tr>
 
 
-</table>`;
+</table>
+
+
+<table class="tg">
+  <h2>Skanowanie</h2>
+<tr>
+  <td class="double">` +
+  Object.keys(Skanowanie)[0] +
+  `</th>
+  <td class="double">` +
+  Skanowanie["Skanowanie ręczne"] +
+  ` zł *</th>
+</tr>
+
+<tr>
+  <td class="double">` +
+  Object.keys(Skanowanie)[1] +
+  `</td>
+  <td class="double">` +
+  Skanowanie["Skanowanie automatyczne"] +
+  ` zł *</td>
+</tr>
+
+
+</table><h5>* - cena podlega negocjacji</h5>`;

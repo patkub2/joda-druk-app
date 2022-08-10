@@ -87,3 +87,8 @@ export const Dodatkowo = {
   "Edycja tekst/rysunek": "2,00",
   "Nagranie CD": "2,00",
 };
+
+export const Skanowanie = {
+  "Skanowanie ręczne": "0,00",
+  "Skanowanie automatyczne": "0,00",
+};

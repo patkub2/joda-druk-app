@@ -23,6 +23,10 @@ html {
   }
 }
 
+h5 {
+  font-size: 0.8rem;
+}
+
 a {
   color: white;
 }
@@ -224,7 +228,8 @@ body {
 }
 .prices tr:nth-child(even),
 .prices th {
-  background-color: #000236;
+  background-color: #06083a;
+  background-color: #10003e;
 }
 .prices .tg {
   width: 100%;
@@ -235,10 +240,10 @@ body {
 .prices .tg td {
   border-color: white;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
   font-size: 0.8rem;
   overflow: hidden;
-  padding: 10px 5px;
+  padding: 20px 5px;
   text-align: center;
 }
 .prices .tg .double {
@@ -253,11 +258,11 @@ body {
 .prices .tg th {
   border-color: white;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
   font-size: 0.8rem;
   font-weight: normal;
   overflow: hidden;
-  padding: 10px 5px;
+  padding: 20px 5px;
   word-break: normal;
 }
 .prices .tg tr:hover {
