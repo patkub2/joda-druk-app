@@ -89,6 +89,6 @@ export const Dodatkowo = {
 };
 
 export const Skanowanie = {
-  "Skanowanie ręczne": "0,00",
-  "Skanowanie automatyczne": "0,00",
+  "Skanowanie ręczne": "0,50",
+  "Skanowanie automatyczne": "0,25",
 };

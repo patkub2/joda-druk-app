@@ -396,6 +396,31 @@ export const Dypl =
 
 </table>
 
+
+
+
+<table class="tg">
+  <h2>Skanowanie</h2>
+<tr>
+  <td class="double">` +
+  Object.keys(Skanowanie)[0] +
+  `</th>
+  <td class="double">` +
+  Skanowanie["Skanowanie ręczne"] +
+  ` zł *</th>
+</tr>
+
+<tr>
+  <td class="double">` +
+  Object.keys(Skanowanie)[1] +
+  `</td>
+  <td class="double">` +
+  Skanowanie["Skanowanie automatyczne"] +
+  ` zł *</td>
+</tr>
+
+
+</table>
 <table class="tg">
   <h2>Dodatkowo</h2>
 <tr>
@@ -423,30 +448,6 @@ export const Dypl =
   <td class="double">` +
   Dodatkowo["Nagranie CD"] +
   ` zł</td>
-</tr>
-
-
-</table>
-
-
-<table class="tg">
-  <h2>Skanowanie</h2>
-<tr>
-  <td class="double">` +
-  Object.keys(Skanowanie)[0] +
-  `</th>
-  <td class="double">` +
-  Skanowanie["Skanowanie ręczne"] +
-  ` zł *</th>
-</tr>
-
-<tr>
-  <td class="double">` +
-  Object.keys(Skanowanie)[1] +
-  `</td>
-  <td class="double">` +
-  Skanowanie["Skanowanie automatyczne"] +
-  ` zł *</td>
 </tr>
 
 
