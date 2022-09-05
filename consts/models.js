@@ -34,10 +34,10 @@ export const MaloForm =
   Object.keys(A4Mono)[0] +
   `</td>
     <td class="tg-0pky">` +
-  A4Mono["1-50 szt"] +
+  A4Mono["1-30 szt"] +
   ` zł</td>
     <td class="tg-0pky">` +
-  A3Mono["1-50 szt"] +
+  A3Mono["1-30 szt"] +
   ` zł</td>
   </tr>
   <tr>
@@ -45,10 +45,10 @@ export const MaloForm =
   Object.keys(A4Mono)[1] +
   `</td>
     <td class="tg-0pky">` +
-  A4Mono["51-100 szt"] +
+  A4Mono["31-100 szt"] +
   ` zł</td></td>
     <td class="tg-0pky">` +
-  A3Mono["51-100 szt"] +
+  A3Mono["31-100 szt"] +
   ` zł</td></td>
   </tr>
   <tr>
