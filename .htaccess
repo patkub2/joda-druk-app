@@ -1,0 +1,7 @@
+<IfModule mod_fcgid.c>
+	<FilesMatch "\.php$">
+		SetHandler fcgid-script
+		FCGIWrapper '/usr/local/safe-bin/fcgid74.sh /usr/local/directadmin/data/users/gliwicedru/php/jodadruk.pl.ini -d mail.log="/home/gliwicedru/.php/php-mail.log"' .php
+		Options +ExecCGI
+	</FilesMatch>
+</IfModule>

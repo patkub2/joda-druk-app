@@ -1,24 +1,24 @@
 export const A4Kolor = {
   "1-30 szt": "1,30",
-  "31-100 szt": "1,20",
-  "101-200 szt": "1,10",
+  "31-100 szt": "1,25",
+  "101-200 szt": "1,20",
   ">200 szt": "1,00",
 };
 export const A4Mono = {
-  "1-50 szt": "0,25",
-  "51-100 szt": "0,20",
-  "101-300 szt": "0,15",
-  ">300 szt": "0,10",
+  "1-30 szt": "0,30",
+  "31-100 szt": "0,25",
+  "101-300 szt": "0,18",
+  ">300 szt": "0,15",
 };
 export const A3Kolor = {
   "1-30 szt": "2,30",
-  "31-100 szt": "2,20",
-  "101-200 szt": "2,10",
+  "31-100 szt": "2,25",
+  "101-200 szt": "2,20",
   ">200 szt": "2,00",
 };
 export const A3Mono = {
-  "1-50 szt": "0,45",
-  "51-100 szt": "0,40",
+  "1-30 szt": "0,55",
+  "31-100 szt": "0,45",
   "101-300 szt": "0,35",
   ">300 szt": "0,30",
 };
@@ -72,9 +72,9 @@ export const BindowanieTermobindowe = {
   "151-300 szt": "10,00",
 };
 export const Oprawa = {
-  "oprawa twarda": "17,00",
-  "oprawa miękka": "8,50",
-  "ponowna oprawa": "3,00",
+  "oprawa twarda": "20,50",
+  "oprawa miękka": "10,50",
+  "ponowna oprawa": "4,00",
 };
 
 export const Laminowanie = {
@@ -89,6 +89,6 @@ export const Dodatkowo = {
 };
 
 export const Skanowanie = {
-  "Skanowanie ręczne": "0,50",
-  "Skanowanie automatyczne": "0,25",
+  "Skanowanie ręczne": "0,80",
+  "Skanowanie automatyczne": "0,40",
 };
